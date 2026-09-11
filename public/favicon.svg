@@ -1,5 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0B0B0D" />
-  <rect x="1" y="1" width="30" height="30" rx="5" fill="none" stroke="#303034" />
-  <path d="M10 10 L22 10 L10 22 L22 22" fill="none" stroke="#B7FF5A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <defs>
+    <linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9FF7A" />
+      <stop offset="100%" stop-color="#9EEB38" />
+    </linearGradient>
+  </defs>
+  <!-- Background Squircle -->
+  <rect width="32" height="32" rx="8" fill="#0B0B0D" />
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="7.25" fill="none" stroke="#303034" stroke-width="1.5" />
+
+  <!-- Bold Modern 'S' Vector Path -->
+  <path d="M22 10.5 C22 7.8 19.5 6.2 16 6.2 C12 6.2 9.5 8.2 9.5 11.4 C9.5 14.8 12.6 15.5 16 16.2 C19.4 16.9 22.5 17.6 22.5 20.8 C22.5 24 19.5 25.8 16 25.8 C11.8 25.8 9.5 23.6 9.5 20.5" 
+        fill="none" 
+        stroke="url(#sGrad)" 
+        stroke-width="3.8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Micro Accent Sparkle Dot -->
+  <circle cx="24.5" cy="7.5" r="1.5" fill="#B7FF5A" />
 </svg>
