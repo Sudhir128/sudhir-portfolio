@@ -134,17 +134,17 @@ export default function PixelAnimation() {
         {/* Ground / Floor Horizon Line at y=31 */}
         <rect x="0" y="31" width="60" height="1" fill="#232328" />
 
-        {/* SCENE 0: CLIENT CONSULTATION (Exact Bilateral Symmetry around center x=30) */}
+        {/* SCENE 0: CLIENT CONSULTATION (Bilateral Symmetry: centered at x=30, 16px margins, 10px gap) */}
         {scene === 0 && (
           <g className="transition-opacity duration-500 ease-in-out">
-            {/* Client on Left: x=12, reaches 22 (distance to center = 8, left margin = 12) */}
-            <PixelCharacter x={12} y={13} pose="talk" color="#60a5fa" coatColor="#2563eb" />
+            {/* Client on Left: body center at x=20 (10px from center 30, left margin 16px) */}
+            <PixelCharacter x={15} y={13} pose="talk" color="#60a5fa" coatColor="#2563eb" />
             
-            {/* Developer on Right: x=48 with flip, reaches 38 (distance to center = 8, right margin = 12) */}
-            <PixelCharacter x={48} y={13} flip={true} pose="listen" color={C_ACCENT} coatColor={C_DARK_ACCENT} />
+            {/* Developer on Right: body center at x=40 (10px from center 30, right margin 16px) */}
+            <PixelCharacter x={35} y={13} flip={true} pose="listen" color={C_ACCENT} coatColor={C_DARK_ACCENT} />
 
-            {/* Speech Dialogue Bubble from Client */}
-            <g transform={`translate(17, ${4 + (frame % 2 === 0 ? 0 : -1)})`}>
+            {/* Speech Dialogue Bubble from Client (pointer aligned with client mouth at x=21) */}
+            <g transform={`translate(20, ${4 + bob + (frame % 2 === 0 ? 0 : -1)})`}>
               <rect x="0" y="0" width="13" height="7" fill={C_TEXT} />
               <rect x="1" y="7" width="2" height="2" fill={C_TEXT} />
               <rect x="2.5" y="2.5" width="2" height="2" fill={frame % 3 >= 0 ? '#2563eb' : '#93c5fd'} />
@@ -152,8 +152,8 @@ export default function PixelAnimation() {
               <rect x="8.5" y="2.5" width="2" height="2" fill={frame % 3 >= 2 ? '#2563eb' : '#93c5fd'} />
             </g>
 
-            {/* Lightbulb Idea Icon Centered Directly Above Developer */}
-            <g transform={`translate(41, ${2 + (frame % 2 === 0 ? -1 : 0)})`}>
+            {/* Lightbulb Idea Icon Centered Directly Above Developer Head (center x=40) */}
+            <g transform={`translate(37, ${2 + bob + (frame % 2 === 0 ? -1 : 0)})`}>
               <rect x="2" y="0" width="3" height="1" fill={C_ACCENT} />
               <rect x="1" y="1" width="5" height="3" fill={C_ACCENT} />
               <rect x="2" y="4" width="3" height="1" fill="#facc15" />
