@@ -76,4 +76,5 @@ The production-ready assets will be generated in the `dist/` directory.
 
 - **Email**: [sudhiraugusto28@gmail.com](mailto:sudhiraugusto28@gmail.com)
 - **GitHub**: [@Sudhir128](https://github.com/Sudhir128)
+- **Instagram**: [@the_techmonkey](https://instagram.com/the_techmonkey)
 - **Location**: Chennai, Tamil Nadu, India

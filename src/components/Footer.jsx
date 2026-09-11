@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, GithubIcon, MailIcon } from './icons';
+import { ArrowUpRight, GithubIcon, MailIcon, InstagramIcon } from './icons';
 
 export default function Footer() {
   const navLinks = [
@@ -89,6 +89,17 @@ export default function Footer() {
                   >
                     <GithubIcon size={14} className="text-[#A7A5A0]" />
                     <span>github.com/Sudhir128</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://instagram.com/the_techmonkey"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A]"
+                  >
+                    <InstagramIcon size={14} className="text-[#A7A5A0]" />
+                    <span>instagram.com/the_techmonkey</span>
                   </a>
                 </li>
               </ul>

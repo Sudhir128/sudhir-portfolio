@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, MailIcon, CheckIcon, CopyIcon } from './icons';
+import { ArrowUpRight, MailIcon, CheckIcon, CopyIcon, InstagramIcon, GithubIcon } from './icons';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -179,6 +179,33 @@ export default function Contact() {
                     className="inline-flex items-center gap-1 rounded border border-[#303034] bg-[#141416] px-2.5 py-1 font-mono text-[11px] text-[#A7A5A0] transition-colors hover:border-[#B7FF5A] hover:text-[#B7FF5A]"
                   >
                     <span>Open in Gmail</span>
+                    <ArrowUpRight size={11} />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#A7A5A0]">Socials</span>
+                <div className="mt-2 flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://github.com/Sudhir128"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded border border-[#303034] bg-[#141416] px-3 py-1.5 font-mono text-[11px] text-[#F2F0EA] transition-colors hover:border-[#B7FF5A] hover:text-[#B7FF5A]"
+                  >
+                    <GithubIcon size={13} className="text-[#A7A5A0]" />
+                    <span>GitHub</span>
+                    <ArrowUpRight size={11} />
+                  </a>
+
+                  <a
+                    href="https://instagram.com/the_techmonkey"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded border border-[#303034] bg-[#141416] px-3 py-1.5 font-mono text-[11px] text-[#F2F0EA] transition-colors hover:border-[#B7FF5A] hover:text-[#B7FF5A]"
+                  >
+                    <InstagramIcon size={13} className="text-[#A7A5A0]" />
+                    <span>@the_techmonkey</span>
                     <ArrowUpRight size={11} />
                   </a>
                 </div>

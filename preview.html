@@ -138,6 +138,16 @@
       );
     }
 
+    function InstagramIcon({ size = 14, className = '' }) {
+      return (
+        <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+        </svg>
+      );
+    }
+
     // --- CORRECTED PIXEL ANIMATION (BORDER REMOVED, BOTTOM WORDINGS REMOVED) ---
     function PixelAnimation() {
       const [scene, setScene] = useState(0);
@@ -835,6 +845,21 @@
                         </a>
                       </div>
                     </div>
+                    <div>
+                      <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#A7A5A0]">Socials</span>
+                      <div className="mt-2 flex flex-wrap items-center gap-3">
+                        <a href="https://github.com/Sudhir128" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded border border-[#303034] bg-[#141416] px-3 py-1.5 font-mono text-[11px] text-[#F2F0EA] hover:border-[#B7FF5A] hover:text-[#B7FF5A]">
+                          <GithubIcon size={13} className="text-[#A7A5A0]" />
+                          <span>GitHub</span>
+                          <ArrowUpRight size={11} />
+                        </a>
+                        <a href="https://instagram.com/the_techmonkey" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded border border-[#303034] bg-[#141416] px-3 py-1.5 font-mono text-[11px] text-[#F2F0EA] hover:border-[#B7FF5A] hover:text-[#B7FF5A]">
+                          <InstagramIcon size={13} className="text-[#A7A5A0]" />
+                          <span>@the_techmonkey</span>
+                          <ArrowUpRight size={11} />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -1022,6 +1047,7 @@
                   <ul className="mt-4 space-y-2.5">
                     <li><a href="mailto:sudhiraugusto28@gmail.com" className="inline-flex items-center gap-2 font-body text-sm text-[#F2F0EA] hover:text-[#B7FF5A]"><MailIcon size={14} className="text-[#A7A5A0]" /><span>sudhiraugusto28@gmail.com</span></a></li>
                     <li><a href="https://github.com/Sudhir128" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-body text-sm text-[#F2F0EA] hover:text-[#B7FF5A]"><GithubIcon size={14} className="text-[#A7A5A0]" /><span>github.com/Sudhir128</span></a></li>
+                    <li><a href="https://instagram.com/the_techmonkey" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-body text-sm text-[#F2F0EA] hover:text-[#B7FF5A]"><InstagramIcon size={14} className="text-[#A7A5A0]" /><span>instagram.com/the_techmonkey</span></a></li>
                   </ul>
                 </div>
               </div>
