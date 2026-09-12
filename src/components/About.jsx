@@ -2,23 +2,23 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section id="about" className="border-t border-[#303034] px-6 py-24 md:px-10 md:py-32">
+    <section id="about" className="border-t border-[#303034] px-5 sm:px-6 py-20 sm:py-24 md:px-10 md:py-32 scroll-mt-20 md:scroll-mt-24">
       <div className="mx-auto max-w-[1400px]">
         <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#A7A5A0]">
           03 — About
         </span>
 
-        <div className="mt-10 grid gap-12 lg:grid-cols-12 lg:gap-12">
+        <div className="mt-8 sm:mt-10 grid gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
-            <h2 className="font-heading text-[clamp(2.25rem,5vw,4rem)] font-bold leading-[1.05] tracking-[-0.02em] text-[#F2F0EA]">
+            <h2 className="font-heading text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.05] tracking-[-0.02em] text-[#F2F0EA] break-words">
               An IT graduate who likes building things.
             </h2>
 
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-[#A7A5A0]">
+            <p className="mt-6 sm:mt-8 max-w-xl text-base sm:text-lg leading-relaxed text-[#A7A5A0]">
               I'm an Information Technology graduate based in Chennai, interested in building useful software across web development, AI, and automation. I enjoy taking an idea, understanding the real problem behind it, and turning it into something functional that people can actually use.
             </p>
 
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-[#8E8C86]">
+            <p className="mt-4 sm:mt-5 max-w-xl text-sm sm:text-base leading-relaxed text-[#8E8C86]">
               Currently focused on AI agents, Generative AI, full-stack applications, modern websites, and robust API integrations.
             </p>
 

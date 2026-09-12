@@ -111,13 +111,13 @@ export default function PixelAnimation() {
   const bob = (frame % 4 < 2) ? 0 : 1;
 
   return (
-    <div className="relative w-full h-full min-h-[280px] sm:min-h-[340px] flex items-center justify-center overflow-hidden select-none">
+    <div className="relative w-full h-full min-h-[200px] sm:min-h-[260px] md:min-h-[320px] flex items-center justify-center overflow-hidden select-none">
       {/* Background Subtle Grid - No Border */}
       <div className="absolute inset-0 bg-grid opacity-25" />
 
       {/* Dynamic Ambient Glow */}
       <div 
-        className="absolute w-48 h-48 rounded-full blur-3xl opacity-15 transition-all duration-1000"
+        className="absolute w-48 h-48 rounded-full blur-3xl opacity-15 transition-all duration-1000 pointer-events-none"
         style={{
           background: scene === 1 ? '#B7FF5A' : scene === 2 ? '#8CC94A' : '#38bdf8',
           transform: `translate(${scene === 0 ? '-15px' : scene === 1 ? '10px' : '0px'}, -10px)`
@@ -129,7 +129,7 @@ export default function PixelAnimation() {
         viewBox="0 0 60 36"
         preserveAspectRatio="xMidYMid meet"
         shapeRendering="crispEdges"
-        className="w-full h-full max-h-[380px] drop-shadow-2xl transition-opacity duration-300"
+        className="w-full h-auto aspect-[60/36] max-h-[360px] drop-shadow-2xl transition-opacity duration-300"
       >
         {/* Ground / Floor Horizon Line at y=31 */}
         <rect x="0" y="31" width="60" height="1" fill="#232328" />

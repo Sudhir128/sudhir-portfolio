@@ -11,20 +11,20 @@ export default function Footer() {
 
   return (
     <>
-      <section className="border-t border-[#303034] px-6 py-28 md:px-10 md:py-36 bg-[#0B0B0D]">
+      <section className="border-t border-[#303034] px-5 sm:px-6 py-20 sm:py-28 md:px-10 md:py-36 bg-[#0B0B0D]">
         <div className="mx-auto max-w-[1400px] text-center">
-          <h2 className="mx-auto max-w-4xl font-heading text-[clamp(2.5rem,7vw,5.5rem)] font-bold leading-[0.98] tracking-[-0.03em] text-[#F2F0EA]">
+          <h2 className="mx-auto max-w-4xl font-heading text-[clamp(2.15rem,6.5vw,5.5rem)] font-bold leading-[1.02] sm:leading-[0.98] tracking-[-0.03em] text-[#F2F0EA] break-words">
             Let's build something useful.
           </h2>
 
-          <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-[#A7A5A0]">
+          <p className="mx-auto mt-5 sm:mt-6 max-w-md text-base sm:text-lg leading-relaxed text-[#A7A5A0]">
             Have an idea, problem, or project you want to explore? Start a conversation.
           </p>
 
-          <div className="mt-10 flex justify-center">
+          <div className="mt-8 sm:mt-10 flex justify-center">
             <a
               href="#contact"
-              className="group inline-flex items-center gap-2 bg-[#B7FF5A] px-8 py-4 font-mono text-xs uppercase tracking-[0.18em] text-[#0B0B0D] font-semibold transition-all duration-200 hover:bg-[#c9ff7a] hover:shadow-[0_0_25px_rgba(183,255,90,0.35)]"
+              className="group inline-flex items-center justify-center min-h-[48px] gap-2 bg-[#B7FF5A] px-8 py-4 font-mono text-xs uppercase tracking-[0.18em] text-[#0B0B0D] font-semibold transition-all duration-200 hover:bg-[#c9ff7a] hover:shadow-[0_0_25px_rgba(183,255,90,0.35)] w-full sm:w-auto text-center"
             >
               <span>Get in touch</span>
               <ArrowUpRight size={15} className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -33,7 +33,12 @@ export default function Footer() {
         </div>
       </section>
 
-      <footer className="border-t border-[#303034] px-6 py-12 md:px-10 bg-[#0E0E11]">
+      <footer 
+        className="border-t border-[#303034] px-5 sm:px-6 py-12 md:px-10 bg-[#0E0E11]"
+        style={{
+          paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 2.5rem)',
+        }}
+      >
         <div className="mx-auto max-w-[1400px]">
           <div className="grid gap-10 md:grid-cols-12">
             <div className="md:col-span-5">
@@ -52,12 +57,12 @@ export default function Footer() {
               <div className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#A7A5A0]">
                 Navigate
               </div>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-1.5 sm:space-y-2">
                 {navLinks.map((item) => (
                   <li key={item.href}>
                     <a
                       href={item.href}
-                      className="font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A]"
+                      className="inline-flex items-center py-1 font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A]"
                     >
                       {item.label}
                     </a>
@@ -70,13 +75,13 @@ export default function Footer() {
               <div className="font-mono text-[10px] uppercase tracking-[0.15em] text-[#A7A5A0]">
                 Connect
               </div>
-              <ul className="mt-4 space-y-2.5">
+              <ul className="mt-4 space-y-2 sm:space-y-2.5">
                 <li>
                   <a
                     href="mailto:sudhiraugusto28@gmail.com"
-                    className="inline-flex items-center gap-2 font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A]"
+                    className="inline-flex items-center gap-2 py-1 font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A] break-all"
                   >
-                    <MailIcon size={14} className="text-[#A7A5A0]" />
+                    <MailIcon size={14} className="text-[#A7A5A0] shrink-0" />
                     <span>sudhiraugusto28@gmail.com</span>
                   </a>
                 </li>
@@ -85,9 +90,9 @@ export default function Footer() {
                     href="https://github.com/Sudhir128"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A]"
+                    className="inline-flex items-center gap-2 py-1 font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A]"
                   >
-                    <GithubIcon size={14} className="text-[#A7A5A0]" />
+                    <GithubIcon size={14} className="text-[#A7A5A0] shrink-0" />
                     <span>github.com/Sudhir128</span>
                   </a>
                 </li>
@@ -96,9 +101,9 @@ export default function Footer() {
                     href="https://instagram.com/the_techmonkey"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A]"
+                    className="inline-flex items-center gap-2 py-1 font-body text-sm text-[#F2F0EA] transition-colors hover:text-[#B7FF5A]"
                   >
-                    <InstagramIcon size={14} className="text-[#A7A5A0]" />
+                    <InstagramIcon size={14} className="text-[#A7A5A0] shrink-0" />
                     <span>instagram.com/the_techmonkey</span>
                   </a>
                 </li>

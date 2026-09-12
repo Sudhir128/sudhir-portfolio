@@ -14,7 +14,7 @@ import ScrollProgress from './components/ScrollProgress';
 
 export default function App() {
   return (
-    <div id="top" className="min-h-screen bg-[#0B0B0D] font-body text-[#F2F0EA] antialiased">
+    <div id="top" className="min-h-screen min-h-[100dvh] w-full max-w-full overflow-x-hidden bg-[#0B0B0D] font-body text-[#F2F0EA] antialiased">
       {/* Left Scroll Percentage Bar */}
       <ScrollProgress />
 
@@ -22,7 +22,7 @@ export default function App() {
       <Navbar />
 
       {/* Main Content */}
-      <main>
+      <main className="w-full max-w-full overflow-x-hidden">
         <Hero />
         <Marquee />
         <SelectedWork />

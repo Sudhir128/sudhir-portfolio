@@ -4,6 +4,20 @@
 
 :root {
   color-scheme: dark;
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -11,6 +25,41 @@ body {
   background-color: #0B0B0D;
   color: #F2F0EA;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(183, 255, 90, 0.15);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent unwanted zoom-in on focus on iOS Safari */
+@media screen and (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Remove 300ms touch delay on mobile links & buttons */
+button,
+a,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+/* Safe Area Insets Helpers for iOS Notch / Dynamic Island / Home Indicator */
+.pt-safe-nav {
+  padding-top: max(var(--sat), 1rem);
+}
+
+.pb-safe {
+  padding-bottom: max(var(--sab), 1.5rem);
 }
 
 /* Background Grid */

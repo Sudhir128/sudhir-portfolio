@@ -30,14 +30,14 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="border-t border-[#303034] px-6 py-24 md:px-10 md:py-32">
+    <section id="services" className="border-t border-[#303034] px-5 sm:px-6 py-20 sm:py-24 md:px-10 md:py-32 scroll-mt-20 md:scroll-mt-24">
       <div className="mx-auto max-w-[1400px]">
-        <div className="flex flex-col gap-4 border-b border-[#303034] pb-10 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-4 border-b border-[#303034] pb-8 sm:pb-10 md:flex-row md:items-end md:justify-between">
           <div>
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#A7A5A0]">
               02 — What I Build
             </span>
-            <h2 className="mt-4 font-heading text-[clamp(2.25rem,5vw,4rem)] font-bold leading-[1] tracking-[-0.02em] text-[#F2F0EA]">
+            <h2 className="mt-3 sm:mt-4 font-heading text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.02] tracking-[-0.02em] text-[#F2F0EA]">
               What I can help with.
             </h2>
           </div>

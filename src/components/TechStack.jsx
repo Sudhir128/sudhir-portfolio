@@ -20,18 +20,18 @@ export default function TechStack() {
   ];
 
   return (
-    <section className="border-t border-[#303034] px-6 py-24 md:px-10 md:py-32">
+    <section className="border-t border-[#303034] px-5 sm:px-6 py-20 sm:py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-[1400px]">
         <div>
           <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#A7A5A0]">
             Stack
           </span>
-          <h2 className="mt-4 font-heading text-[clamp(2rem,4vw,3.5rem)] font-bold tracking-[-0.02em] text-[#F2F0EA]">
+          <h2 className="mt-3 sm:mt-4 font-heading text-[clamp(1.85rem,4vw,3.5rem)] font-bold tracking-[-0.02em] text-[#F2F0EA]">
             Tools I work with.
           </h2>
         </div>
 
-        <div className="mt-12 flex flex-wrap gap-x-8 gap-y-6 select-none">
+        <div className="mt-8 sm:mt-12 flex flex-wrap gap-x-4 sm:gap-x-8 gap-y-3 sm:gap-y-6 select-none">
           {tools.map((tool, idx) => {
             const isHovered = hoveredIdx === idx;
             const isDimmed = hoveredIdx !== null && !isHovered;
@@ -41,7 +41,7 @@ export default function TechStack() {
                 key={tool}
                 onMouseEnter={() => setHoveredIdx(idx)}
                 onMouseLeave={() => setHoveredIdx(null)}
-                className={`cursor-default font-heading text-3xl font-semibold tracking-tight transition-all duration-300 md:text-5xl lg:text-6xl ${
+                className={`cursor-default font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight transition-all duration-300 ${
                   isHovered
                     ? 'text-[#B7FF5A] scale-105'
                     : isDimmed

@@ -3,19 +3,19 @@ import { ArrowUpRight, GithubIcon } from './icons';
 
 export default function SelectedWork() {
   return (
-    <section id="work" className="px-6 py-24 md:px-10 md:py-32">
+    <section id="work" className="px-5 sm:px-6 py-20 sm:py-24 md:px-10 md:py-32 scroll-mt-20 md:scroll-mt-24">
       <div className="mx-auto max-w-[1400px]">
         {/* Section Header */}
-        <div className="flex flex-col gap-4 border-b border-[#303034] pb-10 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-4 border-b border-[#303034] pb-8 sm:pb-10 md:flex-row md:items-end md:justify-between">
           <div>
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#A7A5A0]">
               01 — Selected Work
             </span>
-            <h2 className="mt-4 font-heading text-[clamp(2.25rem,5vw,4rem)] font-bold leading-[1] tracking-[-0.02em] text-[#F2F0EA]">
+            <h2 className="mt-3 sm:mt-4 font-heading text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.02] tracking-[-0.02em] text-[#F2F0EA]">
               Things I've built.
             </h2>
           </div>
-          <p className="max-w-md text-base leading-relaxed text-[#A7A5A0]">
+          <p className="max-w-md text-sm sm:text-base leading-relaxed text-[#A7A5A0]">
             Applications, security tools, business software and AI systems built while learning, experimenting and solving practical problems.
           </p>
         </div>
@@ -27,11 +27,11 @@ export default function SelectedWork() {
           <article className="group grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
             <div className="lg:col-span-7">
               <div className="overflow-hidden border border-[#303034] bg-[#141416] transition-all duration-300 group-hover:border-[#B7FF5A]/50 rounded-xl">
-                <div className="flex items-center gap-2 border-b border-[#303034] px-4 py-3 bg-[#0E0E10]">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <div className="ml-3 flex-1 truncate border border-[#303034] bg-[#0B0B0D] px-3 py-1 font-mono text-[10px] text-[#A7A5A0]">
+                <div className="flex items-center gap-2 border-b border-[#303034] px-3 sm:px-4 py-2.5 sm:py-3 bg-[#0E0E10] min-w-0">
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <div className="ml-2 sm:ml-3 flex-1 min-w-0 truncate border border-[#303034] bg-[#0B0B0D] px-2.5 sm:px-3 py-1 font-mono text-[9px] sm:text-[10px] text-[#A7A5A0]">
                     https://kings-auction.vercel.app
                   </div>
                 </div>
@@ -115,11 +115,11 @@ export default function SelectedWork() {
 
             <div className="order-1 lg:order-2 lg:col-span-7">
               <div className="overflow-hidden border border-[#303034] bg-[#141416] transition-all duration-300 group-hover:border-[#B7FF5A]/50 rounded-xl">
-                <div className="flex items-center gap-2 border-b border-[#303034] px-4 py-3 bg-[#0E0E10]">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <div className="ml-3 flex-1 truncate border border-[#303034] bg-[#0B0B0D] px-3 py-1 font-mono text-[10px] text-[#A7A5A0]">
+                <div className="flex items-center gap-2 border-b border-[#303034] px-3 sm:px-4 py-2.5 sm:py-3 bg-[#0E0E10] min-w-0">
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <div className="ml-2 sm:ml-3 flex-1 min-w-0 truncate border border-[#303034] bg-[#0B0B0D] px-2.5 sm:px-3 py-1 font-mono text-[9px] sm:text-[10px] text-[#A7A5A0]">
                     github.com/Sudhir128/privacyguard-url-risk-detector
                   </div>
                 </div>
@@ -150,11 +150,11 @@ export default function SelectedWork() {
           <article className="group grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
             <div className="lg:col-span-7">
               <div className="overflow-hidden border border-[#303034] bg-[#141416] transition-all duration-300 group-hover:border-[#B7FF5A]/50 rounded-xl">
-                <div className="flex items-center gap-2 border-b border-[#303034] px-4 py-3 bg-[#0E0E10]">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <div className="ml-3 flex-1 truncate border border-[#303034] bg-[#0B0B0D] px-3 py-1 font-mono text-[10px] text-[#A7A5A0]">
+                <div className="flex items-center gap-2 border-b border-[#303034] px-3 sm:px-4 py-2.5 sm:py-3 bg-[#0E0E10] min-w-0">
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <div className="ml-2 sm:ml-3 flex-1 min-w-0 truncate border border-[#303034] bg-[#0B0B0D] px-2.5 sm:px-3 py-1 font-mono text-[9px] sm:text-[10px] text-[#A7A5A0]">
                     github.com/Sudhir128/inventory_probikers
                   </div>
                 </div>
@@ -228,24 +228,24 @@ export default function SelectedWork() {
 
             <div className="order-1 lg:order-2 lg:col-span-7">
               <div className="overflow-hidden border border-[#303034] bg-[#141416] transition-all duration-300 group-hover:border-[#B7FF5A]/50 rounded-xl">
-                <div className="flex items-center gap-2 border-b border-[#303034] px-4 py-3 bg-[#0E0E10]">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <div className="ml-3 flex-1 truncate border border-[#303034] bg-[#0B0B0D] px-3 py-1 font-mono text-[10px] text-[#A7A5A0]">
+                <div className="flex items-center gap-2 border-b border-[#303034] px-3 sm:px-4 py-2.5 sm:py-3 bg-[#0E0E10] min-w-0">
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <div className="ml-2 sm:ml-3 flex-1 min-w-0 truncate border border-[#303034] bg-[#0B0B0D] px-2.5 sm:px-3 py-1 font-mono text-[9px] sm:text-[10px] text-[#A7A5A0]">
                     https://qiq-market-researcher.netlify.app
                   </div>
                 </div>
-                <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#162b5a] via-[#1a3a7c] to-[#2d57b5] p-5 sm:p-6 flex items-center justify-center select-none">
-                  <div className="mx-auto max-w-sm w-full rounded-xl bg-white p-5 shadow-2xl text-slate-800">
-                    <span className="inline-block rounded-full bg-[#dce6fe] px-2.5 py-0.5 text-[10px] font-medium text-[#1e3a8a]">
+                <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#162b5a] via-[#1a3a7c] to-[#2d57b5] p-4 sm:p-6 flex items-center justify-center select-none">
+                  <div className="mx-auto max-w-sm w-full rounded-xl bg-white p-3.5 sm:p-5 shadow-2xl text-slate-800">
+                    <span className="inline-block rounded-full bg-[#dce6fe] px-2 sm:px-2.5 py-0.5 text-[9px] sm:text-[10px] font-medium text-[#1e3a8a]">
                       AI Voice Market Research Agent
                     </span>
-                    <h4 className="mt-2 font-heading text-lg font-bold text-[#0B0B0D]">QIQ Market Researcher</h4>
-                    <p className="mt-1 text-[11px] leading-snug text-[#4B5563]">
+                    <h4 className="mt-1.5 sm:mt-2 font-heading text-base sm:text-lg font-bold text-[#0B0B0D]">QIQ Market Researcher</h4>
+                    <p className="mt-1 text-[10px] sm:text-[11px] leading-snug text-[#4B5563]">
                       Voice-driven competitor analysis, customer insights, SWOT, and market sizing.
                     </p>
-                    <div className="mt-3 grid grid-cols-2 gap-2">
+                    <div className="mt-2.5 sm:mt-3 grid grid-cols-2 gap-1.5 sm:gap-2">
                       {[
                         ['Competitor Analysis', 'Pricing & market gaps.'],
                         ['Market Sizing', 'TAM, SAM, SOM calculation.'],
@@ -253,12 +253,12 @@ export default function SelectedWork() {
                         ['SWOT Research', 'Strengths & opportunities.'],
                       ].map(([title, desc], i) => (
                         <div key={i} className="rounded border border-[#e5e7eb] p-1.5 bg-[#f8fafc]">
-                          <div className="text-[10px] font-semibold text-[#0B0B0D]">{title}</div>
-                          <div className="text-[8px] leading-tight text-[#6b7280]">{desc}</div>
+                          <div className="text-[9px] sm:text-[10px] font-semibold text-[#0B0B0D]">{title}</div>
+                          <div className="text-[8px] leading-tight text-[#6b7280] hidden sm:block">{desc}</div>
                         </div>
                       ))}
                     </div>
-                    <div className="mt-2.5 text-center text-[8px] text-[#9ca3af] font-mono">
+                    <div className="mt-2 text-center text-[7px] sm:text-[8px] text-[#9ca3af] font-mono">
                       Powered by ElevenLabs Conversational AI
                     </div>
                   </div>
@@ -271,11 +271,11 @@ export default function SelectedWork() {
           <article className="group grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
             <div className="lg:col-span-7">
               <div className="overflow-hidden border border-[#303034] bg-[#141416] transition-all duration-300 group-hover:border-[#B7FF5A]/50 rounded-xl">
-                <div className="flex items-center gap-2 border-b border-[#303034] px-4 py-3 bg-[#0E0E10]">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#303034]" />
-                  <div className="ml-3 flex-1 truncate border border-[#303034] bg-[#0B0B0D] px-3 py-1 font-mono text-[10px] text-[#A7A5A0]">
+                <div className="flex items-center gap-2 border-b border-[#303034] px-3 sm:px-4 py-2.5 sm:py-3 bg-[#0E0E10] min-w-0">
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#303034] shrink-0" />
+                  <div className="ml-2 sm:ml-3 flex-1 min-w-0 truncate border border-[#303034] bg-[#0B0B0D] px-2.5 sm:px-3 py-1 font-mono text-[9px] sm:text-[10px] text-[#A7A5A0]">
                     github.com/Sudhir128/au_sportsmangeapp
                   </div>
                 </div>
